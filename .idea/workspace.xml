@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alembic/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alembic/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/domain/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/domain/enums.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/insfrastructure/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/insfrastructure/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/acaiteria_gestao_backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/acaiteria_gestao_backend.iml" afterDir="false" />
+    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat: criando funções migrations">
+      <change afterPath="$PROJECT_DIR$/alembic/versions/0001_initial_schema.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alembic/versions/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,61 +44,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="1.7311724490808676E-226" />
-      <entry key="S2" value="3.6273224601196734E-57" />
-      <entry key="S5" value="2.7031922719556807E-23" />
-      <entry key="S10" value="7.674774747319753E-12" />
-      <entry key="S30" value="0.0011515906942489447" />
-      <entry key="S60" value="0.16308939212791815" />
-      <entry key="M2" value="2.150800889129108" />
-      <entry key="M5" value="13.624120267716469" />
-      <entry key="M10" value="36.93279910631092" />
-      <entry key="M15" value="61.22933264923962" />
-      <entry key="M30" value="119.02670129959216" />
-      <entry key="H1" value="178.34924920426877" />
-      <entry key="H2" value="222.48811307391006" />
-      <entry key="H4" value="249.90554539569322" />
-      <entry key="D1" value="279.4898170906593" />
-      <entry key="W1" value="286.6697485060464" />
+      <entry key="MS100" value="6.111678143231363E-6" />
+      <entry key="MS500" value="0.09062168631711504" />
+      <entry key="S2" value="0.5584761805927984" />
+      <entry key="S5" value="0.9438340806777514" />
+      <entry key="S10" value="1.290912335163624" />
+      <entry key="S30" value="2.5192777810080327" />
+      <entry key="S60" value="4.853871881800087" />
+      <entry key="M2" value="7.864559452359917" />
+      <entry key="M5" value="11.030439719585347" />
+      <entry key="M10" value="14.010740709730712" />
+      <entry key="M15" value="20.394835692661882" />
+      <entry key="M30" value="56.27982615900669" />
+      <entry key="H1" value="128.37972232608894" />
+      <entry key="H2" value="207.50296495492714" />
+      <entry key="H4" value="267.7931693555588" />
+      <entry key="D1" value="336.8160621396981" />
+      <entry key="W1" value="352.2395530081173" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000002367722314" />
-      <entry key="MS500" value="1.0508064234157184" />
-      <entry key="S2" value="1.7096871850252708" />
-      <entry key="S5" value="2.3052045684973512" />
-      <entry key="S10" value="2.6122778697948816" />
-      <entry key="S30" value="2.8604983984761687" />
-      <entry key="S60" value="2.9289813095077823" />
-      <entry key="M2" value="2.9874631636604505" />
-      <entry key="M5" value="3.8239154411588645" />
-      <entry key="M10" value="7.283143019554543" />
-      <entry key="M15" value="11.50346168251378" />
-      <entry key="M30" value="21.579124605945328" />
-      <entry key="H1" value="31.543512354377985" />
-      <entry key="H2" value="38.724932299535574" />
-      <entry key="H4" value="43.06337849665753" />
-      <entry key="D1" value="47.13205301238856" />
-      <entry key="W1" value="47.87485027237362" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000051466742569" />
+      <entry key="S2" value="1.0846996606721417" />
+      <entry key="S5" value="1.3725228215469694" />
+      <entry key="S10" value="1.610888931123859" />
+      <entry key="S30" value="2.0201941294220864" />
+      <entry key="S60" value="2.7298341236242254" />
+      <entry key="M2" value="3.747287671403619" />
+      <entry key="M5" value="4.880537803058077" />
+      <entry key="M10" value="5.569458171871568" />
+      <entry key="M15" value="6.496335628398103" />
+      <entry key="M30" value="11.793420410694477" />
+      <entry key="H1" value="22.884903723573913" />
+      <entry key="H2" value="35.18138745453682" />
+      <entry key="H4" value="44.5222951092583" />
+      <entry key="D1" value="54.66012003601863" />
+      <entry key="W1" value="56.65871638887215" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="8.326519432656353E-4" />
-      <entry key="MS500" value="0.2582388251584842" />
-      <entry key="S2" value="1.2431546721622617" />
-      <entry key="S5" value="2.0419245481301096" />
-      <entry key="S10" value="2.461334970549851" />
-      <entry key="S30" value="2.806159016363411" />
-      <entry key="S60" value="3.0631905027085202" />
-      <entry key="M2" value="5.119745118760854" />
-      <entry key="M5" value="17.414740376596345" />
-      <entry key="M10" value="44.15224517427335" />
-      <entry key="M15" value="72.65398785024107" />
-      <entry key="M30" value="140.52266893434603" />
-      <entry key="H1" value="209.82879060226213" />
-      <entry key="H2" value="261.1727539941361" />
-      <entry key="H4" value="292.9462244984209" />
-      <entry key="D1" value="326.61768243790925" />
-      <entry key="W1" value="334.5439898892884" />
+      <entry key="MS100" value="7.359333679441846E-6" />
+      <entry key="MS500" value="0.1498329959886795" />
+      <entry key="S2" value="1.0834603591032905" />
+      <entry key="S5" value="1.8225143340491532" />
+      <entry key="S10" value="2.296990933540153" />
+      <entry key="S30" value="3.8374144897156484" />
+      <entry key="S60" value="7.0090137793399565" />
+      <entry key="M2" value="11.225903786060293" />
+      <entry key="M5" value="15.722923166546114" />
+      <entry key="M10" value="19.477551859282944" />
+      <entry key="M15" value="26.815533114908877" />
+      <entry key="M30" value="68.01402521698166" />
+      <entry key="H1" value="151.21162388384255" />
+      <entry key="H2" value="242.6445070404252" />
+      <entry key="H4" value="312.2903870900363" />
+      <entry key="D1" value="391.4710590049556" />
+      <entry key="W1" value="408.8975107419845" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -184,12 +171,25 @@
       <updated>1782241365456</updated>
       <workItem from="1782241366432" duration="561000" />
       <workItem from="1782242019583" duration="343000" />
-      <workItem from="1782427263148" duration="5368000" />
+      <workItem from="1782427263148" duration="6627000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: criando funções migrations">
+      <option name="closed" value="true" />
+      <created>1782496167897</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782496167897</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: criando funções migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: criando funções migrations" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/acaiteria_gestao_backend$acaiteria_gestao_backend.coverage" NAME="acaiteria_gestao_backend Coverage Results" MODIFIED="1782427296069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/acaiteria_gestao_backend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_main.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alembic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alembic/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/core/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/core/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/insfrastructure/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/insfrastructure/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/acaiteria_gestao_backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/acaiteria_gestao_backend.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uv.lock" beforeDir="false" afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +32,87 @@
       <list>
         <option value="FastAPI main" />
         <option value="FastAPI test_main" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;PedroHeitor12567&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/PedroHeitor12567/acaiteria-gestao-backend.git&quot;,
+    &quot;accountId&quot;: &quot;23b257a9-c6f6-4417-9c2f-4b38ff4b2c3d&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="1.7311724490808676E-226" />
+      <entry key="S2" value="3.6273224601196734E-57" />
+      <entry key="S5" value="2.7031922719556807E-23" />
+      <entry key="S10" value="7.674774747319753E-12" />
+      <entry key="S30" value="0.0011515906942489447" />
+      <entry key="S60" value="0.16308939212791815" />
+      <entry key="M2" value="2.150800889129108" />
+      <entry key="M5" value="13.624120267716469" />
+      <entry key="M10" value="36.93279910631092" />
+      <entry key="M15" value="61.22933264923962" />
+      <entry key="M30" value="119.02670129959216" />
+      <entry key="H1" value="178.34924920426877" />
+      <entry key="H2" value="222.48811307391006" />
+      <entry key="H4" value="249.90554539569322" />
+      <entry key="D1" value="279.4898170906593" />
+      <entry key="W1" value="286.6697485060464" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="1.0000002367722314" />
+      <entry key="MS500" value="1.0508064234157184" />
+      <entry key="S2" value="1.7096871850252708" />
+      <entry key="S5" value="2.3052045684973512" />
+      <entry key="S10" value="2.6122778697948816" />
+      <entry key="S30" value="2.8604983984761687" />
+      <entry key="S60" value="2.9289813095077823" />
+      <entry key="M2" value="2.9874631636604505" />
+      <entry key="M5" value="3.8239154411588645" />
+      <entry key="M10" value="7.283143019554543" />
+      <entry key="M15" value="11.50346168251378" />
+      <entry key="M30" value="21.579124605945328" />
+      <entry key="H1" value="31.543512354377985" />
+      <entry key="H2" value="38.724932299535574" />
+      <entry key="H4" value="43.06337849665753" />
+      <entry key="D1" value="47.13205301238856" />
+      <entry key="W1" value="47.87485027237362" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="8.326519432656353E-4" />
+      <entry key="MS500" value="0.2582388251584842" />
+      <entry key="S2" value="1.2431546721622617" />
+      <entry key="S5" value="2.0419245481301096" />
+      <entry key="S10" value="2.461334970549851" />
+      <entry key="S30" value="2.806159016363411" />
+      <entry key="S60" value="3.0631905027085202" />
+      <entry key="M2" value="5.119745118760854" />
+      <entry key="M5" value="17.414740376596345" />
+      <entry key="M10" value="44.15224517427335" />
+      <entry key="M15" value="72.65398785024107" />
+      <entry key="M30" value="140.52266893434603" />
+      <entry key="H1" value="209.82879060226213" />
+      <entry key="H2" value="261.1727539941361" />
+      <entry key="H4" value="292.9462244984209" />
+      <entry key="D1" value="326.61768243790925" />
+      <entry key="W1" value="334.5439898892884" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0,
@@ -36,19 +123,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;FastAPI.acaiteria_gestao_backend.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="acaiteria_gestao_backend" type="Python.FastAPI">
       <option name="file" value="$PROJECT_DIR$/main.py" />
@@ -71,7 +170,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-245168a56dbd-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.25134.203" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-PY-261.24374.152" />
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
       </set>
     </attachedChunks>
   </component>
@@ -84,10 +184,14 @@
       <updated>1782241365456</updated>
       <workItem from="1782241366432" duration="561000" />
       <workItem from="1782242019583" duration="343000" />
+      <workItem from="1782427263148" duration="5368000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/acaiteria_gestao_backend$acaiteria_gestao_backend.coverage" NAME="acaiteria_gestao_backend Coverage Results" MODIFIED="1782427296069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

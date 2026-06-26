@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat: criando funções migrations">
-      <change afterPath="$PROJECT_DIR$/alembic/versions/0001_initial_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/alembic/versions/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat: criando o aqrquivo que vai inicializar as tabelas">
+      <change afterPath="$PROJECT_DIR$/app/core/database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,61 +42,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="6.111678143231363E-6" />
-      <entry key="MS500" value="0.09062168631711504" />
-      <entry key="S2" value="0.5584761805927984" />
-      <entry key="S5" value="0.9438340806777514" />
-      <entry key="S10" value="1.290912335163624" />
-      <entry key="S30" value="2.5192777810080327" />
-      <entry key="S60" value="4.853871881800087" />
-      <entry key="M2" value="7.864559452359917" />
-      <entry key="M5" value="11.030439719585347" />
-      <entry key="M10" value="14.010740709730712" />
-      <entry key="M15" value="20.394835692661882" />
-      <entry key="M30" value="56.27982615900669" />
-      <entry key="H1" value="128.37972232608894" />
-      <entry key="H2" value="207.50296495492714" />
-      <entry key="H4" value="267.7931693555588" />
-      <entry key="D1" value="336.8160621396981" />
-      <entry key="W1" value="352.2395530081173" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000003937504" />
+      <entry key="S2" value="1.004458864590655" />
+      <entry key="S5" value="1.1254749001965805" />
+      <entry key="S10" value="1.5482158249650113" />
+      <entry key="S30" value="4.361279731828892" />
+      <entry key="S60" value="8.446936318155487" />
+      <entry key="M2" value="15.99046368363465" />
+      <entry key="M5" value="32.29416361801643" />
+      <entry key="M10" value="45.52473093659322" />
+      <entry key="M15" value="55.339845751527314" />
+      <entry key="M30" value="92.17302908486242" />
+      <entry key="H1" value="164.7138556053394" />
+      <entry key="H2" value="247.18837272966712" />
+      <entry key="H4" value="311.59891737476704" />
+      <entry key="D1" value="386.3217018178309" />
+      <entry key="W1" value="403.01664551076937" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.000051466742569" />
-      <entry key="S2" value="1.0846996606721417" />
-      <entry key="S5" value="1.3725228215469694" />
-      <entry key="S10" value="1.610888931123859" />
-      <entry key="S30" value="2.0201941294220864" />
-      <entry key="S60" value="2.7298341236242254" />
-      <entry key="M2" value="3.747287671403619" />
-      <entry key="M5" value="4.880537803058077" />
-      <entry key="M10" value="5.569458171871568" />
-      <entry key="M15" value="6.496335628398103" />
-      <entry key="M30" value="11.793420410694477" />
-      <entry key="H1" value="22.884903723573913" />
-      <entry key="H2" value="35.18138745453682" />
-      <entry key="H4" value="44.5222951092583" />
-      <entry key="D1" value="54.66012003601863" />
-      <entry key="W1" value="56.65871638887215" />
+      <entry key="MS100" value="6.68478608236418E-99" />
+      <entry key="MS500" value="2.3174880468757925E-20" />
+      <entry key="S2" value="1.234135856422746E-5" />
+      <entry key="S5" value="0.011346511881572872" />
+      <entry key="S10" value="0.13762220458832877" />
+      <entry key="S30" value="1.303785442766308" />
+      <entry key="S60" value="2.708380410451921" />
+      <entry key="M2" value="4.257985206007368" />
+      <entry key="M5" value="6.9384353113408945" />
+      <entry key="M10" value="9.202887421886405" />
+      <entry key="M15" value="10.765608163431034" />
+      <entry key="M30" value="16.36023226690318" />
+      <entry key="H1" value="27.569786246383327" />
+      <entry key="H2" value="40.404137549079934" />
+      <entry key="H4" value="50.39527864173453" />
+      <entry key="D1" value="61.428773860310756" />
+      <entry key="W1" value="63.624435612928124" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="7.359333679441846E-6" />
-      <entry key="MS500" value="0.1498329959886795" />
-      <entry key="S2" value="1.0834603591032905" />
-      <entry key="S5" value="1.8225143340491532" />
-      <entry key="S10" value="2.296990933540153" />
-      <entry key="S30" value="3.8374144897156484" />
-      <entry key="S60" value="7.0090137793399565" />
-      <entry key="M2" value="11.225903786060293" />
-      <entry key="M5" value="15.722923166546114" />
-      <entry key="M10" value="19.477551859282944" />
-      <entry key="M15" value="26.815533114908877" />
-      <entry key="M30" value="68.01402521698166" />
-      <entry key="H1" value="151.21162388384255" />
-      <entry key="H2" value="242.6445070404252" />
-      <entry key="H4" value="312.2903870900363" />
-      <entry key="D1" value="391.4710590049556" />
-      <entry key="W1" value="408.8975107419845" />
+      <entry key="MS100" value="2.5268724699461315E-9" />
+      <entry key="MS500" value="0.019077289262143016" />
+      <entry key="S2" value="0.3727921109169898" />
+      <entry key="S5" value="0.754941425439918" />
+      <entry key="S10" value="1.3708236568850642" />
+      <entry key="S30" value="5.350983170409437" />
+      <entry key="S60" value="10.88854436358342" />
+      <entry key="M2" value="20.039055668328988" />
+      <entry key="M5" value="39.070078669762665" />
+      <entry key="M10" value="54.609824990565215" />
+      <entry key="M15" value="66.01143589047597" />
+      <entry key="M30" value="108.46178378041469" />
+      <entry key="H1" value="192.22382142750428" />
+      <entry key="H2" value="287.54858744259093" />
+      <entry key="H4" value="361.96670714576925" />
+      <entry key="D1" value="447.7448662714742" />
+      <entry key="W1" value="466.64025036246295" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -171,7 +169,7 @@
       <updated>1782241365456</updated>
       <workItem from="1782241366432" duration="561000" />
       <workItem from="1782242019583" duration="343000" />
-      <workItem from="1782427263148" duration="6627000" />
+      <workItem from="1782427263148" duration="7123000" />
     </task>
     <task id="LOCAL-00001" summary="feat: criando funções migrations">
       <option name="closed" value="true" />
@@ -181,7 +179,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782496167897</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: criando o aqrquivo que vai inicializar as tabelas">
+      <option name="closed" value="true" />
+      <created>1782500147052</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782500147052</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +195,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: criando funções migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: criando funções migrations" />
+    <MESSAGE value="feat: criando o aqrquivo que vai inicializar as tabelas" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: criando o aqrquivo que vai inicializar as tabelas" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/acaiteria_gestao_backend$acaiteria_gestao_backend.coverage" NAME="acaiteria_gestao_backend Coverage Results" MODIFIED="1782427296069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

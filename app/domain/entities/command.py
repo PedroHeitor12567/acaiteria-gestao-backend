@@ -1,0 +1,18 @@
+from datetime import datetime
+from dataclasses import dataclass, field
+from decimal import Decimal
+from typing import Optional
+from command_item import CommandItem
+
+from app.domain.enums import CommandStatus
+
+
+@dataclass
+class Command:
+    id: Optional[int]
+    command_number: int
+    opened_at: datetime
+    closed_at: Optional[datetime]
+    status: CommandStatus
+    total: Decimal
+    items: list[CommandItem] = field(default_factory=list)

@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat: criando o aqrquivo que vai inicializar as tabelas">
-      <change afterPath="$PROJECT_DIR$/app/core/database.py" afterDir="false" />
+    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat: cria o engine SQLAlchemy 2.0 e expõe get_db como dependência de sessão por requisição.">
+      <change afterPath="$PROJECT_DIR$/app/domain/entities/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/entities/command.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/entities/command_item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/entities/expense.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/entities/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,61 +47,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000003937504" />
-      <entry key="S2" value="1.004458864590655" />
-      <entry key="S5" value="1.1254749001965805" />
-      <entry key="S10" value="1.5482158249650113" />
-      <entry key="S30" value="4.361279731828892" />
-      <entry key="S60" value="8.446936318155487" />
-      <entry key="M2" value="15.99046368363465" />
-      <entry key="M5" value="32.29416361801643" />
-      <entry key="M10" value="45.52473093659322" />
-      <entry key="M15" value="55.339845751527314" />
-      <entry key="M30" value="92.17302908486242" />
-      <entry key="H1" value="164.7138556053394" />
-      <entry key="H2" value="247.18837272966712" />
-      <entry key="H4" value="311.59891737476704" />
-      <entry key="D1" value="386.3217018178309" />
-      <entry key="W1" value="403.01664551076937" />
+      <entry key="MS100" value="1.0000000001247709" />
+      <entry key="MS500" value="1.0104526600424042" />
+      <entry key="S2" value="1.356614410728719" />
+      <entry key="S5" value="2.40148254437581" />
+      <entry key="S10" value="4.522160394944494" />
+      <entry key="S30" value="10.316561625398165" />
+      <entry key="S60" value="15.901769988266569" />
+      <entry key="M2" value="26.48702757482439" />
+      <entry key="M5" value="49.679180406460326" />
+      <entry key="M10" value="67.60055857103518" />
+      <entry key="M15" value="75.9460288163969" />
+      <entry key="M30" value="85.94750987713195" />
+      <entry key="H1" value="91.68941544921118" />
+      <entry key="H2" value="95.21457738622757" />
+      <entry key="H4" value="109.60636389376556" />
+      <entry key="D1" value="326.4044801974947" />
+      <entry key="W1" value="472.68091557957325" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="6.68478608236418E-99" />
-      <entry key="MS500" value="2.3174880468757925E-20" />
-      <entry key="S2" value="1.234135856422746E-5" />
-      <entry key="S5" value="0.011346511881572872" />
-      <entry key="S10" value="0.13762220458832877" />
-      <entry key="S30" value="1.303785442766308" />
-      <entry key="S60" value="2.708380410451921" />
-      <entry key="M2" value="4.257985206007368" />
-      <entry key="M5" value="6.9384353113408945" />
-      <entry key="M10" value="9.202887421886405" />
-      <entry key="M15" value="10.765608163431034" />
-      <entry key="M30" value="16.36023226690318" />
-      <entry key="H1" value="27.569786246383327" />
-      <entry key="H2" value="40.404137549079934" />
-      <entry key="H4" value="50.39527864173453" />
-      <entry key="D1" value="61.428773860310756" />
-      <entry key="W1" value="63.624435612928124" />
+      <entry key="MS100" value="1.9428875080058724E-25" />
+      <entry key="MS500" value="1.1420616049138576E-5" />
+      <entry key="S2" value="0.05813302836348757" />
+      <entry key="S5" value="0.32222889406778876" />
+      <entry key="S10" value="0.623014841128954" />
+      <entry key="S30" value="1.5611327340687369" />
+      <entry key="S60" value="2.9205519947401557" />
+      <entry key="M2" value="5.332902220462879" />
+      <entry key="M5" value="9.568714869206897" />
+      <entry key="M10" value="12.439948015035515" />
+      <entry key="M15" value="13.72017673669942" />
+      <entry key="M30" value="15.223012353981535" />
+      <entry key="H1" value="16.07359592173905" />
+      <entry key="H2" value="16.599228683346137" />
+      <entry key="H4" value="18.895426856148024" />
+      <entry key="D1" value="53.22808159037388" />
+      <entry key="W1" value="76.00509393161272" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.5268724699461315E-9" />
-      <entry key="MS500" value="0.019077289262143016" />
-      <entry key="S2" value="0.3727921109169898" />
-      <entry key="S5" value="0.754941425439918" />
-      <entry key="S10" value="1.3708236568850642" />
-      <entry key="S30" value="5.350983170409437" />
-      <entry key="S60" value="10.88854436358342" />
-      <entry key="M2" value="20.039055668328988" />
-      <entry key="M5" value="39.070078669762665" />
-      <entry key="M10" value="54.609824990565215" />
-      <entry key="M15" value="66.01143589047597" />
-      <entry key="M30" value="108.46178378041469" />
-      <entry key="H1" value="192.22382142750428" />
-      <entry key="H2" value="287.54858744259093" />
-      <entry key="H4" value="361.96670714576925" />
-      <entry key="D1" value="447.7448662714742" />
-      <entry key="W1" value="466.64025036246295" />
+      <entry key="MS100" value="2.927265221040227E-10" />
+      <entry key="MS500" value="0.014627099784098062" />
+      <entry key="S2" value="0.5941406752117939" />
+      <entry key="S5" value="2.046949134959359" />
+      <entry key="S10" value="4.548867432474168" />
+      <entry key="S30" value="11.469284039521876" />
+      <entry key="S60" value="18.519062907693883" />
+      <entry key="M2" value="31.581361527537908" />
+      <entry key="M5" value="59.080970578980775" />
+      <entry key="M10" value="79.92935571097912" />
+      <entry key="M15" value="89.58341575326533" />
+      <entry key="M30" value="101.12387932632208" />
+      <entry key="H1" value="107.7381734713004" />
+      <entry key="H2" value="111.800899915039" />
+      <entry key="H4" value="128.49410347577148" />
+      <entry key="D1" value="379.62814032336263" />
+      <entry key="W1" value="548.6850794537557" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -133,6 +138,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PROGRAMAÇÃO\PROJETOS\PROJETOS - PYTHON\acaiteria-gestao-backend\app\domain\entities" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="acaiteria_gestao_backend" type="Python.FastAPI">
       <option name="file" value="$PROJECT_DIR$/main.py" />
@@ -169,7 +179,7 @@
       <updated>1782241365456</updated>
       <workItem from="1782241366432" duration="561000" />
       <workItem from="1782242019583" duration="343000" />
-      <workItem from="1782427263148" duration="7123000" />
+      <workItem from="1782427263148" duration="8350000" />
     </task>
     <task id="LOCAL-00001" summary="feat: criando funções migrations">
       <option name="closed" value="true" />
@@ -187,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782500147052</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: cria o engine SQLAlchemy 2.0 e expõe get_db como dependência de sessão por requisição.">
+      <option name="closed" value="true" />
+      <created>1782500454851</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1782500454851</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +214,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: criando funções migrations" />
     <MESSAGE value="feat: criando o aqrquivo que vai inicializar as tabelas" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: criando o aqrquivo que vai inicializar as tabelas" />
+    <MESSAGE value="feat: cria o engine SQLAlchemy 2.0 e expõe get_db como dependência de sessão por requisição." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: cria o engine SQLAlchemy 2.0 e expõe get_db como dependência de sessão por requisição." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/acaiteria_gestao_backend$acaiteria_gestao_backend.coverage" NAME="acaiteria_gestao_backend Coverage Results" MODIFIED="1782427296069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

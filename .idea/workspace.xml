@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat: interfaces abstratas que a infraestrutura implementa (inversão de dependência).">
-      <change afterPath="$PROJECT_DIR$/app/application/dtos/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/application/dtos/command_dto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/application/dtos/dashboard_dto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/application/dtos/expense_dto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/application/dtos/product_dto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/application/dtos/report_dto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/application/dtos/sales_dto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat:  objetos de entrada/saída dos services, desacoplados dos schemas HTTP">
+      <change afterPath="$PROJECT_DIR$/app/application/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/application/services/command_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/application/services/product_service.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,61 +44,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.597912524698353E-9" />
-      <entry key="MS500" value="0.019355287081237932" />
-      <entry key="S2" value="0.48732015679100593" />
-      <entry key="S5" value="1.1608938785126366" />
-      <entry key="S10" value="2.0404576210851864" />
-      <entry key="S30" value="7.4707348672062714" />
-      <entry key="S60" value="15.877760703786013" />
-      <entry key="M2" value="29.17554338518268" />
-      <entry key="M5" value="59.476527450372764" />
-      <entry key="M10" value="94.34945131127095" />
-      <entry key="M15" value="116.03532748079365" />
-      <entry key="M30" value="147.68659842028208" />
-      <entry key="H1" value="171.37403743758009" />
-      <entry key="H2" value="199.29756157609026" />
-      <entry key="H4" value="241.07133787170216" />
-      <entry key="D1" value="497.460851934933" />
-      <entry key="W1" value="686.9092444175855" />
+      <entry key="MS100" value="2.167324099717413E-29" />
+      <entry key="MS500" value="1.925499018875708E-6" />
+      <entry key="S2" value="0.05977523404953298" />
+      <entry key="S5" value="0.7708974384605073" />
+      <entry key="S10" value="2.4538935875593326" />
+      <entry key="S30" value="8.604273633236092" />
+      <entry key="S60" value="15.647035296618848" />
+      <entry key="M2" value="24.127119025814466" />
+      <entry key="M5" value="40.99026200243293" />
+      <entry key="M10" value="71.87499341050147" />
+      <entry key="M15" value="98.31774793301686" />
+      <entry key="M30" value="146.20286833320367" />
+      <entry key="H1" value="186.26799854436425" />
+      <entry key="H2" value="224.97346890032708" />
+      <entry key="H4" value="273.0456687475656" />
+      <entry key="D1" value="535.9942237351096" />
+      <entry key="W1" value="728.2254605871104" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0000000000000002" />
-      <entry key="MS500" value="1.000662405107217" />
-      <entry key="S2" value="1.1671516476896382" />
-      <entry key="S5" value="1.67925287668533" />
-      <entry key="S10" value="2.3255786274272428" />
-      <entry key="S30" value="3.566282980220562" />
-      <entry key="S60" value="4.873992672700897" />
-      <entry key="M2" value="7.203473486578709" />
-      <entry key="M5" value="12.387648008687142" />
-      <entry key="M10" value="18.238473151352565" />
-      <entry key="M15" value="21.96521985913342" />
-      <entry key="M30" value="27.51869275080754" />
-      <entry key="H1" value="31.827637480112266" />
-      <entry key="H2" value="37.33231903597546" />
-      <entry key="H4" value="45.66051849116167" />
-      <entry key="D1" value="89.51424911751326" />
-      <entry key="W1" value="119.99524372302353" />
+      <entry key="MS100" value="1.0000000065312216" />
+      <entry key="MS500" value="1.0230674125887942" />
+      <entry key="S2" value="1.389717332234107" />
+      <entry key="S5" value="1.6860807219629563" />
+      <entry key="S10" value="1.8471089025318097" />
+      <entry key="S30" value="2.7571830432895847" />
+      <entry key="S60" value="4.446382480234833" />
+      <entry key="M2" value="6.606927962746093" />
+      <entry key="M5" value="10.484217781124507" />
+      <entry key="M10" value="16.54319221864005" />
+      <entry key="M15" value="21.490128647704367" />
+      <entry key="M30" value="30.32431568621201" />
+      <entry key="H1" value="37.74656496189984" />
+      <entry key="H2" value="45.25165274642072" />
+      <entry key="H4" value="54.75061558059495" />
+      <entry key="D1" value="99.8882659191661" />
+      <entry key="W1" value="130.87545306276968" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="3.0954893873049314E-9" />
-      <entry key="MS500" value="0.030571722383019504" />
-      <entry key="S2" value="0.922594075641571" />
-      <entry key="S5" value="2.3710518497972886" />
-      <entry key="S10" value="4.025222528639678" />
-      <entry key="S30" value="10.798275447712637" />
-      <entry key="S60" value="20.566247236826708" />
-      <entry key="M2" value="36.2288260480614" />
-      <entry key="M5" value="71.73482096314042" />
-      <entry key="M10" value="112.47740010561259" />
-      <entry key="M15" value="137.9070959742389" />
-      <entry key="M30" value="175.1438930168931" />
-      <entry key="H1" value="203.16538751853386" />
-      <entry key="H2" value="236.60830555756633" />
-      <entry key="H4" value="286.7183180336571" />
-      <entry key="D1" value="586.9693873330968" />
-      <entry key="W1" value="806.9032934811827" />
+      <entry key="MS100" value="6.875995350729594E-6" />
+      <entry key="MS500" value="0.09278495245515764" />
+      <entry key="S2" value="0.631641525165107" />
+      <entry key="S5" value="1.7515295911936637" />
+      <entry key="S10" value="3.7701761995838767" />
+      <entry key="S30" value="11.031060604485635" />
+      <entry key="S60" value="19.835993377630018" />
+      <entry key="M2" value="30.550573461245076" />
+      <entry key="M5" value="51.361369130892506" />
+      <entry key="M10" value="88.32453983978007" />
+      <entry key="M15" value="119.72329163038576" />
+      <entry key="M30" value="176.4642257047691" />
+      <entry key="H1" value="223.97419944672245" />
+      <entry key="H2" value="270.20040711328204" />
+      <entry key="H4" value="327.78085616159643" />
+      <entry key="D1" value="635.8764070527732" />
+      <entry key="W1" value="859.0996618081707" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -181,7 +176,7 @@
       <updated>1782241365456</updated>
       <workItem from="1782241366432" duration="561000" />
       <workItem from="1782242019583" duration="343000" />
-      <workItem from="1782427263148" duration="11908000" />
+      <workItem from="1782427263148" duration="12692000" />
     </task>
     <task id="LOCAL-00001" summary="feat: criando funções migrations">
       <option name="closed" value="true" />
@@ -231,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782585460479</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat:  objetos de entrada/saída dos services, desacoplados dos schemas HTTP">
+      <option name="closed" value="true" />
+      <created>1782586747841</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1782586747841</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +247,8 @@
     <MESSAGE value="feat: representações de negócio independentes de ORM (Product, Command, CommandItem, Expense)." />
     <MESSAGE value="feat: exceções de negócio, mapeadas para HTTP no main.py" />
     <MESSAGE value="feat: interfaces abstratas que a infraestrutura implementa (inversão de dependência)." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: interfaces abstratas que a infraestrutura implementa (inversão de dependência)." />
+    <MESSAGE value="feat:  objetos de entrada/saída dos services, desacoplados dos schemas HTTP" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  objetos de entrada/saída dos services, desacoplados dos schemas HTTP" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/acaiteria_gestao_backend$acaiteria_gestao_backend.coverage" NAME="acaiteria_gestao_backend Coverage Results" MODIFIED="1782427296069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

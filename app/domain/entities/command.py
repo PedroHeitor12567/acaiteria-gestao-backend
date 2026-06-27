@@ -2,9 +2,9 @@ from datetime import datetime
 from dataclasses import dataclass, field
 from decimal import Decimal
 from typing import Optional
-from command_item import CommandItem
 
-from app.domain.enums import CommandStatus
+from app.domain.enums.command_status import CommandStatus
+from command_item import CommandItem
 
 
 @dataclass

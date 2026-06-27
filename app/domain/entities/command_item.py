@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from decimal import Decimal
 from typing import Optional
 
-from app.domain.enums import ProductCategory
+from app.domain.enums.product_catetgory import ProductCategory
 
 
 @dataclass

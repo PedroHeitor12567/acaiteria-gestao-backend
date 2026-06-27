@@ -5,7 +5,9 @@ from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 from sqlalchemy import String, Numeric, Boolean, Integer, DateTime, ForeignKey
 from sqlalchemy import Enum as SAEnum
 
-from app.domain.enums import CommandStatus, ProductCategory
+from app.domain.enums.product_catetgory import ProductCategory
+
+from app.domain.enums.command_status import CommandStatus
 
 class Base(DeclarativeBase):
     pass

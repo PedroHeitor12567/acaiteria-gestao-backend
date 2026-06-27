@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat: cria o engine SQLAlchemy 2.0 e expõe get_db como dependência de sessão por requisição.">
-      <change afterPath="$PROJECT_DIR$/app/domain/entities/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/domain/entities/command.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/domain/entities/command_item.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/domain/entities/expense.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/domain/entities/product.py" afterDir="false" />
+    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat: representações de negócio independentes de ORM (Product, Command, CommandItem, Expense).">
+      <change afterPath="$PROJECT_DIR$/app/domain/enums/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/enums/command_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/enums/product_catetgory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/excpetions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/excpetions/exception.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/entities/command.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/entities/command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/entities/command_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/entities/command_item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/entities/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/entities/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/enums.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/insfrastructure/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/insfrastructure/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,61 +52,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0000000001247709" />
-      <entry key="MS500" value="1.0104526600424042" />
-      <entry key="S2" value="1.356614410728719" />
-      <entry key="S5" value="2.40148254437581" />
-      <entry key="S10" value="4.522160394944494" />
-      <entry key="S30" value="10.316561625398165" />
-      <entry key="S60" value="15.901769988266569" />
-      <entry key="M2" value="26.48702757482439" />
-      <entry key="M5" value="49.679180406460326" />
-      <entry key="M10" value="67.60055857103518" />
-      <entry key="M15" value="75.9460288163969" />
-      <entry key="M30" value="85.94750987713195" />
-      <entry key="H1" value="91.68941544921118" />
-      <entry key="H2" value="95.21457738622757" />
-      <entry key="H4" value="109.60636389376556" />
-      <entry key="D1" value="326.4044801974947" />
-      <entry key="W1" value="472.68091557957325" />
+      <entry key="MS100" value="2.3911628359055817E-4" />
+      <entry key="MS500" value="0.18867824606507" />
+      <entry key="S2" value="0.6591179279341691" />
+      <entry key="S5" value="0.865407333599379" />
+      <entry key="S10" value="1.0667224321939466" />
+      <entry key="S30" value="2.0107091772328904" />
+      <entry key="S60" value="3.864267984179847" />
+      <entry key="M2" value="9.241700076118518" />
+      <entry key="M5" value="30.259059082629715" />
+      <entry key="M10" value="54.25399603218435" />
+      <entry key="M15" value="67.46358282975947" />
+      <entry key="M30" value="84.86984584821654" />
+      <entry key="H1" value="95.60323943790756" />
+      <entry key="H2" value="102.00728722802022" />
+      <entry key="H4" value="117.75333821159685" />
+      <entry key="D1" value="335.49601777837745" />
+      <entry key="W1" value="482.4933203620555" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.9428875080058724E-25" />
-      <entry key="MS500" value="1.1420616049138576E-5" />
-      <entry key="S2" value="0.05813302836348757" />
-      <entry key="S5" value="0.32222889406778876" />
-      <entry key="S10" value="0.623014841128954" />
-      <entry key="S30" value="1.5611327340687369" />
-      <entry key="S60" value="2.9205519947401557" />
-      <entry key="M2" value="5.332902220462879" />
-      <entry key="M5" value="9.568714869206897" />
-      <entry key="M10" value="12.439948015035515" />
-      <entry key="M15" value="13.72017673669942" />
-      <entry key="M30" value="15.223012353981535" />
-      <entry key="H1" value="16.07359592173905" />
-      <entry key="H2" value="16.599228683346137" />
-      <entry key="H4" value="18.895426856148024" />
-      <entry key="D1" value="53.22808159037388" />
-      <entry key="W1" value="76.00509393161272" />
+      <entry key="MS100" value="1.0000000000011198" />
+      <entry key="MS500" value="1.004072131878286" />
+      <entry key="S2" value="1.2527335893008757" />
+      <entry key="S5" value="1.6052857196352304" />
+      <entry key="S10" value="1.978615652293119" />
+      <entry key="S30" value="3.191541805414927" />
+      <entry key="S60" value="4.212528305355132" />
+      <entry key="M2" value="5.656294600159743" />
+      <entry key="M5" value="9.846947798901356" />
+      <entry key="M10" value="14.114588061685199" />
+      <entry key="M15" value="16.361047110006098" />
+      <entry key="M30" value="19.25040220659994" />
+      <entry key="H1" value="21.00126330241801" />
+      <entry key="H2" value="22.0373482716231" />
+      <entry key="H4" value="24.574521420451056" />
+      <entry key="D1" value="59.07961207579462" />
+      <entry key="W1" value="81.97488044855383" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.927265221040227E-10" />
-      <entry key="MS500" value="0.014627099784098062" />
-      <entry key="S2" value="0.5941406752117939" />
-      <entry key="S5" value="2.046949134959359" />
-      <entry key="S10" value="4.548867432474168" />
-      <entry key="S30" value="11.469284039521876" />
-      <entry key="S60" value="18.519062907693883" />
-      <entry key="M2" value="31.581361527537908" />
-      <entry key="M5" value="59.080970578980775" />
-      <entry key="M10" value="79.92935571097912" />
-      <entry key="M15" value="89.58341575326533" />
-      <entry key="M30" value="101.12387932632208" />
-      <entry key="H1" value="107.7381734713004" />
-      <entry key="H2" value="111.800899915039" />
-      <entry key="H4" value="128.49410347577148" />
-      <entry key="D1" value="379.62814032336263" />
-      <entry key="W1" value="548.6850794537557" />
+      <entry key="MS100" value="0.00494449396619081" />
+      <entry key="MS500" value="0.38932649700674726" />
+      <entry key="S2" value="1.4143371590368607" />
+      <entry key="S5" value="2.1909099225406754" />
+      <entry key="S10" value="2.872057287335468" />
+      <entry key="S30" value="5.09608922451442" />
+      <entry key="S60" value="7.984114772865055" />
+      <entry key="M2" value="14.801195082255951" />
+      <entry key="M5" value="39.99628397853264" />
+      <entry key="M10" value="68.27476116128727" />
+      <entry key="M15" value="83.74787694643769" />
+      <entry key="M30" value="104.07252075214706" />
+      <entry key="H1" value="116.57775450767171" />
+      <entry key="H2" value="124.03038171950938" />
+      <entry key="H4" value="142.31941029619597" />
+      <entry key="D1" value="394.5710719259055" />
+      <entry key="W1" value="564.4672498694117" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -179,7 +184,7 @@
       <updated>1782241365456</updated>
       <workItem from="1782241366432" duration="561000" />
       <workItem from="1782242019583" duration="343000" />
-      <workItem from="1782427263148" duration="8350000" />
+      <workItem from="1782427263148" duration="9059000" />
     </task>
     <task id="LOCAL-00001" summary="feat: criando funções migrations">
       <option name="closed" value="true" />
@@ -205,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782500454851</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: representações de negócio independentes de ORM (Product, Command, CommandItem, Expense).">
+      <option name="closed" value="true" />
+      <created>1782566088929</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782566088929</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +228,8 @@
     <MESSAGE value="feat: criando funções migrations" />
     <MESSAGE value="feat: criando o aqrquivo que vai inicializar as tabelas" />
     <MESSAGE value="feat: cria o engine SQLAlchemy 2.0 e expõe get_db como dependência de sessão por requisição." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: cria o engine SQLAlchemy 2.0 e expõe get_db como dependência de sessão por requisição." />
+    <MESSAGE value="feat: representações de negócio independentes de ORM (Product, Command, CommandItem, Expense)." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: representações de negócio independentes de ORM (Product, Command, CommandItem, Expense)." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/acaiteria_gestao_backend$acaiteria_gestao_backend.coverage" NAME="acaiteria_gestao_backend Coverage Results" MODIFIED="1782427296069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

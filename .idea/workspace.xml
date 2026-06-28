@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat:  objetos de entrada/saída dos services, desacoplados dos schemas HTTP">
-      <change afterPath="$PROJECT_DIR$/app/application/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/application/services/command_service.py" afterDir="false" />
+    <list default="true" id="92dc8a2f-d564-47da-8df2-3747c5a8e75b" name="Changes" comment="feat:  cadastro e listagem de produtos, com validação de valores negativos">
       <change afterPath="$PROJECT_DIR$/app/application/services/product_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +175,7 @@
       <updated>1782241365456</updated>
       <workItem from="1782241366432" duration="561000" />
       <workItem from="1782242019583" duration="343000" />
-      <workItem from="1782427263148" duration="12692000" />
+      <workItem from="1782427263148" duration="13786000" />
     </task>
     <task id="LOCAL-00001" summary="feat: criando funções migrations">
       <option name="closed" value="true" />
@@ -234,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782586747841</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat:  cadastro e listagem de produtos, com validação de valores negativos">
+      <option name="closed" value="true" />
+      <created>1782587557557</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1782587557557</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +255,8 @@
     <MESSAGE value="feat: exceções de negócio, mapeadas para HTTP no main.py" />
     <MESSAGE value="feat: interfaces abstratas que a infraestrutura implementa (inversão de dependência)." />
     <MESSAGE value="feat:  objetos de entrada/saída dos services, desacoplados dos schemas HTTP" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat:  objetos de entrada/saída dos services, desacoplados dos schemas HTTP" />
+    <MESSAGE value="feat:  cadastro e listagem de produtos, com validação de valores negativos" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:  cadastro e listagem de produtos, com validação de valores negativos" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/acaiteria_gestao_backend$acaiteria_gestao_backend.coverage" NAME="acaiteria_gestao_backend Coverage Results" MODIFIED="1782427296069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
